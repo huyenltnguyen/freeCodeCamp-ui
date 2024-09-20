@@ -10,6 +10,7 @@ interface AnswerProps extends QuizQuestionAnswer {
 
 const radioIconDefaultClasses = [
 	"block",
+	"shrink-0",
 	"relative",
 	"w-[20px]",
 	"h-[20px]",
@@ -89,7 +90,7 @@ export const Answer = ({ value, label, disabled, checked }: AnswerProps) => {
 			{({ active }) => (
 				<>
 					<RadioIcon active={active} checked={!!checked} />
-					<RadioGroup.Label className="m-0 text-foreground-primary" as="p">
+					<RadioGroup.Label className="m-0 text-foreground-primary">
 						{label}
 					</RadioGroup.Label>
 				</>
