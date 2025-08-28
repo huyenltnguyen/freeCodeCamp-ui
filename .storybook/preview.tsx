@@ -1,4 +1,6 @@
 import React from "react";
+import { preferDark, darkTheme, lightTheme } from "./theme";
+
 import "../src/base.css";
 import "../src/fonts.css";
 
@@ -21,6 +23,9 @@ export const parameters = {
 				value: "#1b1b32",
 			},
 		],
+	},
+	docs: {
+		theme: preferDark ? darkTheme : lightTheme,
 	},
 };
 
